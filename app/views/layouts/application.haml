@@ -1,0 +1,15 @@
+!!!
+%html
+  %head
+    %title ThoughtStream
+    = stylesheet_link_tag    'application', media: 'all', data: { turbolinks_track: true }
+    = javascript_include_tag 'application', data: { turbolinks_track: true }
+    %meta{name: 'viewport', content: 'width=device-width, initial-scale=1'}
+    = csrf_meta_tags
+  %body
+    .container
+      .header.clearfix
+        %h3.text-muted
+          ThoughtStream
+
+      = yield

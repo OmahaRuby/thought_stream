@@ -1,0 +1,5 @@
+= form_for thought, class: 'form', remote: true do |f|
+  .input-group
+    = f.text_area :content, class: 'form-control', data: { submit_on_enter: true }, rows: '1',placeholder: 'Type your deepest thoughts here'
+    %span.input-group-btn
+      = f.submit 'Think', class: 'btn btn-success'

@@ -1,0 +1,9 @@
+common: &common
+  adapter: postgresql
+  username: postgres
+  password: password
+  min_messages: ERROR
+
+development:
+  <<: *common
+  database: thought_stream_development

@@ -1,0 +1,7 @@
+.thought-area{ id: 'thought-area' }
+  .new-thought{ id: 'new-thought' }
+    = render 'form', thought: @thought
+
+  .thoughts{ id: 'thoughts' }
+    - @thoughts.each do |thought|
+      = render 'thought', thought: thought
